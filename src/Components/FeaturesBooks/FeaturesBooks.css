@@ -1,0 +1,98 @@
+.features-book-container{
+    position: relative;
+}
+.featurebook-box{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+   
+}
+.featurebook{
+    background: var(--color-light);
+    /* max-width: 160px; */
+}
+.featurebook-info>div{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.featurebook-boxnav{
+    position: relative;
+}
+.featurebook-boxnav .featurebook-btn{
+   
+    position: absolute;
+    bottom:0;
+   
+    padding: 0.5rem;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+   
+    transition-property: all;
+    transition: var(--transition);
+    right:0;
+    left: 0;
+    opacity: 1;
+   
+
+
+
+}
+/* .featurebook-boxnav .featurebook-btn:hover{
+    bottom:0;
+    right:0;
+    left: 0;
+    opacity: 1;
+} */
+
+.featurebook-btn .featurebook-btnBs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--color-primary);
+}
+.featurebook-btn .featurebook-btnBe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--color-blue);
+    
+}
+.BsPlus{
+    font-size: 1.875rem;
+    line-height: 2.25rem/* 36px */;
+}
+.features-book-container .swiper-pagination{
+    margin: auto;
+    margin-top: 120px;
+}
+.feature-border{
+    margin-top: 56px;
+    height: 1px;
+    background: var(--color-dark-Ex);
+    width: 100%;
+}
+.feature-btn{
+    margin: auto;
+    margin-right: 0;
+    margin-top: -40px;
+}
+@media (max-width:1024px) {
+    .feature-btn{
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}

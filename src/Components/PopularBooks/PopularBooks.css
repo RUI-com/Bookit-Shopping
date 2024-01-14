@@ -1,0 +1,129 @@
+.popularbooks-container{
+    border-bottom: 1px solid var(--color-dark-Ex);
+    padding-bottom: 56px;
+}
+.filter-buttons{
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 66px;
+}
+.filter-buttons button{
+    font-size: 16px;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    transition: var(--transition);
+    padding: 10px;
+    cursor: pointer;
+}
+.filter-buttons button:hover{
+    background-image:linear-gradient(to bottom right,var(--color-blue),var(--color-primary));
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color:var(--color-light) ;
+    border: none;
+}
+.filter-buttons .active{
+    background-image:linear-gradient(to bottom right,var(--color-blue),var(--color-primary));
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color:var(--color-light) ;
+    border: none;
+    
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    animation: GAni forwards 400ms ease;
+
+}
+@keyframes GAni{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+
+}
+.popularbook-image{
+    position: relative;
+    background: var(--color-light);
+}
+.popularbook-info>div{
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+}
+.popularbook-image .featurebook-btn{
+   
+    position: absolute;
+    bottom:0;
+   
+    padding: 0.5rem;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+   
+    transition-property: all;
+    transition: var(--transition);
+    right:0;
+    left: 0;
+    opacity: 1;
+   
+
+
+
+}
+.featurebook-btn .featurebook-btnBs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--color-primary);
+}
+.featurebook-btn .featurebook-btnBe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--color-blue);
+    
+}
+.BsPlus{
+    font-size: 1.875rem;
+    line-height: 2.25rem/* 36px */;
+}
+@media (max-width:1024px) {
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+@media (max-width:500px) {
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .popularbook-info>div{
+        margin-bottom: 10px;
+    }
+}
